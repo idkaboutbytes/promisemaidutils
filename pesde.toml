@@ -1,0 +1,19 @@
+name = "idkaboutbytes/promisemaidutils"
+version = "2.1.2"
+description = "PromiseMaidUtils library for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/promisemaidutils"
+includes = [
+    "pesde.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "default.project.json",
+    "sourcemap.json",
+    "src/**/*.luau",
+]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
