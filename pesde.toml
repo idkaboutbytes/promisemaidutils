@@ -1,0 +1,23 @@
+name = "idkaboutbytes/promisemaidutils"
+version = "2.1.4"
+description = "PromiseMaidUtils library for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/promisemaidutils"
+includes = [
+    "pesde.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "default.project.json",
+    "sourcemap.json",
+    "src/**/*.luau",
+]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[dependencies]
+promise = { repo = "idkaboutbytes/promise", rev = "v2.1.5" }
+Maid = { repo = "idkaboutbytes/maid", rev = "v1.1.6" }
